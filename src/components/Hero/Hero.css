@@ -1,0 +1,82 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffcc;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form input[type="search"]{
+    background-color: transparent;
+    border: transparent;
+    width: 400px;
+    font-size: 1.2em;
+    font-family: Poppins, sans-serif;
+    padding-left: 30px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 501px){
+    .form input[type="search"] {
+        width: 180px;
+        padding-left: 0px;
+    }
+}
+
